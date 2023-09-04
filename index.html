@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+
+        <!-- Navigation start here -->
+        <div class="nav-bar"> 
+            <div class="inner-nav">
+                <img src="Assets/Images/whatsapp.png" alt="">
+                <h1>whatsapp web</h1>
+            </div>
+        </div>
+        <!-- Navigation bar end here -->
+
+
+        <!-- Body start here -->
+        <div class="body">
+
+            <div class="inner-body">
+
+                <div class="scan-section">
+                    <div class="instruction">
+                        <h1>Use Whatsapp on your computer</h1>
+                        <ul class="instruction-list">
+                            <li>Open Whatsapp on your phone</li>
+                            <li>Tap <span>Menu</span> <span class="list-icon"><ion-icon name="grid-outline"></ion-icon></span> or <span>Settings</span> <span class="list-icon"><ion-icon name="cog-outline"></ion-icon></span> and select <span>Linked Devices</span></li>
+                            <li>Tap on <span>Link a device</span></li>
+                            <li>Point your phone to this screen to capture the QR code</li>
+                        </ul>
+                    </div>
+                    <div class="qr-code">
+                    </div>
+                </div>
+
+                <div class="mobile-number">
+                    <a href="">Link with phone number</a>
+                </div>
+
+                <div class="tutorial-section">
+                    <h1>Tutorial</h1>
+                    <div class="help">
+                        <a href="https://faq.whatsapp.com/1317564962315842/?cms_platform=web&lang=en">
+                            Need help to get started?
+                        </a>
+                    </div>
+                    <div class="video-section">
+                        <video class="video" id="video" controls src="Assets/Video/whatsapp-webclient-login_c09223f0813e7c3adc16476cba2a5d0d.htm"></video>
+                        <div class="thumbnile" id="thumbnile">
+                            <button class="play-btn" id="play-btn">
+                                <ion-icon name="play"></ion-icon>
+                            </button>
+                        </div>
+                        <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/OigeuQ0TXxg?si=-koffhysUR4zU8eX&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+                    </div>
+                </div>
+                
+            </div>
+
+        </div>
+        <!-- Body end here -->
+
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+<script>
+    const vedioBtn = document.getElementById("play-btn");
+    const thumbnile = document.getElementById("thumbnile");
+    const video = document.getElementById("video");
+
+    const playFunction = () => {
+        thumbnile.style.display = "none"
+        video.style.display = "block"
+        video.play();
+    }
+
+    vedioBtn.addEventListener('click', playFunction);
+</script>
+</body>
+</html>
